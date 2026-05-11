@@ -2,7 +2,7 @@ import Article from "./Article";
 
 function ArticleList(props) {
   return (
-    <div>
+    <main>
       <h2>Articles</h2>
 
       {props.articles.map((article, index) => (
@@ -13,7 +13,7 @@ function ArticleList(props) {
           preview={article.preview}
         />
       ))}
-    </div>
+    </main>
   );
 }
 

@@ -1,11 +1,11 @@
-function Article(props) {
+function Article({ title, date = "January 1, 1970", preview }) {
   return (
     <article>
-      <h3>{props.title}</h3>
+      <h3>{title}</h3>
 
-      <small>{props.date}</small>
+      <small>{date}</small>
 
-      <p>{props.preview}</p>
+      <p>{preview}</p>
     </article>
   );
 }
